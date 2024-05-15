@@ -21,11 +21,13 @@ TRIP_EDGE: defines whether the stop is the first one on the trip (1), an interme
 LATITUDE/LONGITUDE: Location in lat/long  
 SCHEDULED_TIME: Scheduled stop time  
 ACTUAL_ARRIVAL_TIME: actual arrival time  
-ACTUAL_DEPARTURE_TIME: actual departure time  
+ACTUAL_DEPARTURE_TIME: actual departure time
+  
 ADHERENCE: Difference between actual departure time and scheduled time; negative indicates departure time after scheduled time and positive indicates departure time before scheduled time. Generally, on-time is considered to be no more than 6 minutes lates and no more than one minute early, but there are some exceptions to these cutoffs. Whether or not a bus is on-time can be determined by looking at the ADJUSTED_EARLY_COUNT, ADJUSTED_LATE_COUNT, and ADJUSTED_ONTIME_COUNT columns.  
 SCHEDULED_HDWY: Scheduled headway in minutes for the given timepoint crossing record; headway is the difference between the scheduled_time and the previous scheduled time for that stop  
 ACTUAL_HDWY: Actual headway  
-HDWY_DEV: calculates headway deviation in minutes as the difference between actual and scheduled headway. Negative values indicate a shorter headway than scheduled (i.e. bunching) and positive values indicate a longer headway than scheduled (i.e. gapping)  
+HDWY_DEV: calculates headway deviation in minutes as the difference between actual and scheduled headway. Negative values indicate a shorter headway than scheduled (i.e. bunching) and positive values indicate a longer headway than scheduled (i.e. gapping) 
+ 
 ADJUSTED_EARLY_COUNT: An indicator for if the bus is considered to be early  
 ADJUSTED_LATE_COUNT: An indicator for if the bus is considered to be late  
 ADJUSTED_ONTIME_COUNT: An indicator for if the bus is considered to be on time  
